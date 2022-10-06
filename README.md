@@ -12,10 +12,13 @@ Thats how the data set selected was found in the following link: https://bbci.de
 
 Data sets provided by the Berlin BCI group: Berlin Institute of Technology (Machine Learning Laboratory) and Fraunhofer FIRST (Intelligent Data Analysis Group) (Klaus-Robert Müller, Benjamin Blankertz, Carmen Vidaurre, Guido Nolte), and Campus Benjamin Franklin of the Charité - University Medicine Berlin, Department of Neurology, Neurophysics Group (Gabriel Curio).
 
-### Experimental setup
+### + Experimental setup
 These data sets were recorded from healthy subjects. In the whole session motor imagery was performed without feedback. For each subject two classes of motor imagery were selected from the three classes left hand, right hand, and foot.
 
-Arrows pointing left, right, or down were presented as visual cues on a computer screen. Cues were displayed for a period of 4s during which the subject was instructed to perform the cued motor imagery task. These periods were interleaved with 2s of blank screen and 2s with a fixation cross shown in the center of the screen. The fixation cross was superimposed on the cues, i.e. it was shown for 6s. These data sets are provided with complete marker information.
+Arrows pointing left, right, or down were presented as visual cues on a computer screen. Cues were displayed for a period of 4s during which the subject was instructed to perform the cued motor imagery task. These periods were interleaved with 2s of blank screen and 2s with a fixation cross shown in the center of the screen. The fixation cross was superimposed on the cues, i.e. it was shown for 6s. These data sets are provided with complete marker information.ç
+
+### + Format of the Data
+Given are continuous signals of 59 EEG channels and markers that indicate the time points of cue presentation and the corresponding target classes.
 
 # Procesamiento de señales EEG y su clasificación por algoritmos de Inteligencia Artificial.
 
@@ -32,22 +35,16 @@ Fue así como se dio con el siguiente dataset: https://bbci.de/competition/iv/de
 ### Montaje experimental
 Estos conjuntos de datos se registraron en sujetos sanos. En toda la sesión se realizaron imágenes motoras sin retroalimentación. Para cada sujeto se seleccionaron dos clases de imágenes motoras de las tres clases mano izquierda, mano derecha y pie.
 
-Calibration data: In the first two runs, arrows pointing left, right, or down were presented as visual cues on a computer screen. Cues were displayed for a period of 4s during which the subject was instructed to perform the cued motor imagery task. These periods were interleaved with 2s of blank screen and 2s with a fixation cross shown in the center of the screen. The fixation cross was superimposed on the cues, i.e. it was shown for 6s. These data sets are provided with complete marker information.
-
 Se presentaron flechas que apuntaban a la izquierda, a la derecha o hacia abajo como señales visuales en una pantalla de ordenador. Las señales se mostraban durante un periodo de 4 segundos en el que se indicaba al sujeto que realizara la tarea de imágenes motoras con señales. Estos periodos se intercalaron con 2s de pantalla en blanco y 2s con una cruz de fijación mostrada en el centro de la pantalla. La cruz de fijación se superponía a las señales, es decir, se mostraba durante 6s. Estos conjuntos de datos cuentan con información completa sobre los marcadores.
 
-_____________________________________________
+### Formato de los datos
+Se dan señales continuas de 59 canales de EEG y marcadores que indican los puntos de tiempo de la presentación de la pista y las clases objetivo correspondientes.
+_______________________________________________________________________________________________________________________________________________________________________
 
 
 
 
 
-
-
-
-
-
-Experimental Setup
 
 Format of the Data
 Given are continuous signals of 59 EEG channels and, for the calibration data, markers that indicate the time points of cue presentation and the corresponding target classes.
