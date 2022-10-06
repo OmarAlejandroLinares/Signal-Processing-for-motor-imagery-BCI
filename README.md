@@ -32,22 +32,27 @@ Fue así como se dio con el siguiente dataset: https://bbci.de/competition/iv/de
 
 Éste data set fue obtenido por el grupo de BCI de Berlin formado por: Laboratorio de Machine Learning, Grupo de Análisis Inteligente de Datos del Instituto Tecnológico de Berlin y por el Departamento de Neurología y Neurofísica de la Universidad de Medicina de Berlin.
 
-### Montaje experimental
+### + Montaje experimental
 Estos conjuntos de datos se registraron en sujetos sanos. En toda la sesión se realizaron imágenes motoras sin retroalimentación. Para cada sujeto se seleccionaron dos clases de imágenes motoras de las tres clases mano izquierda, mano derecha y pie.
 
 Se presentaron flechas que apuntaban a la izquierda, a la derecha o hacia abajo como señales visuales en una pantalla de ordenador. Las señales se mostraban durante un periodo de 4 segundos en el que se indicaba al sujeto que realizara la tarea de imágenes motoras con señales. Estos periodos se intercalaron con 2s de pantalla en blanco y 2s con una cruz de fijación mostrada en el centro de la pantalla. La cruz de fijación se superponía a las señales, es decir, se mostraba durante 6s. Estos conjuntos de datos cuentan con información completa sobre los marcadores.
 
-### Formato de los datos
+### + Formato de los datos
 Se dan señales continuas de 59 canales de EEG y marcadores que indican los puntos de tiempo de la presentación de la pista y las clases objetivo correspondientes.
+
+Los datos se encuentran guardados en formato de Matlab (*.mat) y contienen las siguientes variables:
+- cnt: 
+- mrk: 
+  - pos: 
+  - y: 
+- nfo: 
+  - fs: 
+  - clab: 
+  - classes: 
+  - xpos: 
+  - ypos: 
 _______________________________________________________________________________________________________________________________________________________________________
 
-
-
-
-
-
-Format of the Data
-Given are continuous signals of 59 EEG channels and, for the calibration data, markers that indicate the time points of cue presentation and the corresponding target classes.
 
 Data are provided in Matlab format (*.mat) containing variables:
 
@@ -61,10 +66,9 @@ clab: cell array of channel labels,
 classes: cell array of the names of the motor imagery classes,
 xpos: x-position of electrodes in a 2d-projection,
 ypos: y-position of electrodes in a 2d-projection.
-As alternative, data is also provided in zipped ASC II format:
-*_cnt.txt: the continuous EEG signals, where each row holds the values for all channels at a specific time point
-*_mrk.txt: target cue information, each row represents one cue where the first value defines the time point (given in unit sample), and the second value the target class (-1 for class one or 1 for class two). For evaluation data no *_mrk.txt file is provided.
-*_nfo.txt: contains other information as described for the matlab format.
+
+
+
 Requirements and Evaluation
 Please provide an ASC II file (named 'Result_BCIC_IV_ds1.txt') containing classifier outputs (real number between -1 and 1) for each sample point of the evaluation signals, one value per line. The submissions are evaluated in view of a one dimensional cursor control application with range from -1 to 1. The mental state of class one is used to position the cursor at -1, and the mental state of class two is used to position the cursor near 1. In the absense of those mental states (intermitting intervals) the cursor should be at position 0. Note that it is unknown to the competitors at what intervals the subject is in a defined mental state. Competitiors submit classifier outputs for all time points. The evaluation function calculates the squared error with respect to the target vector that is -1 for class one, 1 for class two, and 0 otherwise, averaged across time points. In the averaging we will ignore time points during transient periods (1s starting from each cue). For competition purpose, only results for the real data set(s) are considered, but results for artifical data are also reported for comparison.
 Optionally, please report which of the data sets you think to be artificially generated.
