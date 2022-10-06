@@ -36,6 +36,7 @@ The recording was made using BrainAmp MR plus amplifiers and a Ag/AgCl electrode
 
 Reference: Benjamin Blankertz, Guido Dornhege, Matthias Krauledat, Klaus-Robert Müller, and Gabriel Curio. The non-invasive Berlin Brain-Computer Interface: Fast acquisition of effective performance in untrained subjects. NeuroImage, 37(2):539-550, 2007.
 
+_______________________________________________________________________________________________________________________________________________________________________
 # Procesamiento de señales EEG y su clasificación por algoritmos de Inteligencia Artificial.
 
 ## Descripción
@@ -71,5 +72,3 @@ Los datos se encuentran guardados en formato de Matlab (*.mat) y contienen las s
 El registro se realizó utilizando amplificadores BrainAmp MR plus y un casquillo de electrodos de Ag/AgCl. Se midieron las señales de 59 posiciones del EEG que estaban más densamente distribuidas en las áreas sensoriomotoras. Las señales se muestrearon a 100 Hz y se sometieron a un filtro paso bajas (Chebyshev tipo II de orden 10 con una ondulación de banda de parada de 50 dB hacia abajo y una frecuencia de borde de banda de parada de 49 Hz).
 
 Referencia: Benjamin Blankertz, Guido Dornhege, Matthias Krauledat, Klaus-Robert Müller, and Gabriel Curio. The non-invasive Berlin Brain-Computer Interface: Fast acquisition of effective performance in untrained subjects. NeuroImage, 37(2):539-550, 2007.
-_______________________________________________________________________________________________________________________________________________________________________
-
