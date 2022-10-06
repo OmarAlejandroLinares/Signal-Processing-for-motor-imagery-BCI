@@ -32,6 +32,9 @@ Data are provided in Matlab format (*.mat) containing variables:
   - xpos: x-position of electrodes in a 2d-projection.
   - ypos: y-position of electrodes in a 2d-projection.
 
+The recording was made using BrainAmp MR plus amplifiers and a Ag/AgCl electrode cap. Signals from 59 EEG positions were measured that were most densely distributed over sensorimotor areas. Signals were downsampled at 100 Hz and low-pass (Chebyshev Type II filter of order 10 with stopband ripple 50dB down and stopband edge frequency 49Hz).
+
+Reference: Benjamin Blankertz, Guido Dornhege, Matthias Krauledat, Klaus-Robert Müller, and Gabriel Curio. The non-invasive Berlin Brain-Computer Interface: Fast acquisition of effective performance in untrained subjects. NeuroImage, 37(2):539-550, 2007.
 
 # Procesamiento de señales EEG y su clasificación por algoritmos de Inteligencia Artificial.
 
@@ -64,13 +67,9 @@ Los datos se encuentran guardados en formato de Matlab (*.mat) y contienen las s
   - classes: Arreglo de los nombres de las clases de movimientos imaginarios. 
   - xpos: posición-x de los electrodos en una proyección 2d.
   - ypos: posición-y de los electrodos en una proyección 2d.
+
+El registro se realizó utilizando amplificadores BrainAmp MR plus y un casquillo de electrodos de Ag/AgCl. Se midieron las señales de 59 posiciones del EEG que estaban más densamente distribuidas en las áreas sensoriomotoras. Las señales se muestrearon a 100 Hz y se sometieron a un filtro paso bajas (Chebyshev tipo II de orden 10 con una ondulación de banda de parada de 50 dB hacia abajo y una frecuencia de borde de banda de parada de 49 Hz).
+
+Referencia: Benjamin Blankertz, Guido Dornhege, Matthias Krauledat, Klaus-Robert Müller, and Gabriel Curio. The non-invasive Berlin Brain-Computer Interface: Fast acquisition of effective performance in untrained subjects. NeuroImage, 37(2):539-550, 2007.
 _______________________________________________________________________________________________________________________________________________________________________
 
-
-Requirements and Evaluation
-Please provide an ASC II file (named 'Result_BCIC_IV_ds1.txt') containing classifier outputs (real number between -1 and 1) for each sample point of the evaluation signals, one value per line. The submissions are evaluated in view of a one dimensional cursor control application with range from -1 to 1. The mental state of class one is used to position the cursor at -1, and the mental state of class two is used to position the cursor near 1. In the absense of those mental states (intermitting intervals) the cursor should be at position 0. Note that it is unknown to the competitors at what intervals the subject is in a defined mental state. Competitiors submit classifier outputs for all time points. The evaluation function calculates the squared error with respect to the target vector that is -1 for class one, 1 for class two, and 0 otherwise, averaged across time points. In the averaging we will ignore time points during transient periods (1s starting from each cue). For competition purpose, only results for the real data set(s) are considered, but results for artifical data are also reported for comparison.
-Optionally, please report which of the data sets you think to be artificially generated.
-You also have to provide a description of the used algorithm (ASC II, HTML or PDF format) for publication at the results web page.
-
-Technical Information
-The recording was made using BrainAmp MR plus amplifiers and a Ag/AgCl electrode cap. Signals from 59 EEG positions were measured that were most densely distributed over sensorimotor areas. Signals were band-pass filtered between 0.05 and 200 Hz and then digitized at 1000 Hz with 16 bit (0.1 uV) accuracy. We provide also a version of the data that is downsampled at 100 Hz (first low-pass filtering the original data (Chebyshev Type II filter of order 10 with stopband ripple 50dB down and stopband edge frequency 49Hz) and then calculating the mean of blocks of 10 samples).
