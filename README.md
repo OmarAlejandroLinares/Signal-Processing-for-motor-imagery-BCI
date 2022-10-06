@@ -46,9 +46,9 @@ Fue así como se dio con el siguiente dataset: https://bbci.de/competition/iv/de
 Éste data set fue obtenido por el grupo de BCI de Berlin formado por: Laboratorio de Machine Learning, Grupo de Análisis Inteligente de Datos del Instituto Tecnológico de Berlin y por el Departamento de Neurología y Neurofísica de la Universidad de Medicina de Berlin.
 
 ### + Montaje experimental
-Estos conjuntos de datos se registraron en sujetos sanos. En toda la sesión se realizaron imágenes motoras sin retroalimentación. Para cada sujeto se seleccionaron dos clases de imágenes motoras de las tres clases mano izquierda, mano derecha y pie.
+Estos conjuntos de datos se registraron en sujetos sanos. En toda la sesión se realizaron movimientos imaginarios sin retroalimentación. Para cada sujeto se seleccionaron dos clases de movimientos imaginarios de las tres clases mano izquierda, mano derecha y pie.
 
-Se presentaron flechas que apuntaban a la izquierda, a la derecha o hacia abajo como señales visuales en una pantalla de ordenador. Las señales se mostraban durante un periodo de 4 segundos en el que se indicaba al sujeto que realizara la tarea de imágenes motoras con señales. Estos periodos se intercalaron con 2s de pantalla en blanco y 2s con una cruz de fijación mostrada en el centro de la pantalla. La cruz de fijación se superponía a las señales, es decir, se mostraba durante 6s. Estos conjuntos de datos cuentan con información completa sobre los marcadores.
+Se presentaron flechas que apuntaban a la izquierda, a la derecha o hacia abajo como señales visuales en una pantalla de ordenador. Las señales se mostraban durante un periodo de 4 segundos en el que se indicaba al sujeto que realizara la tarea de movimientos imaginarios con señales. Estos periodos se intercalaron con 2s de pantalla en blanco y 2s con una cruz de fijación mostrada en el centro de la pantalla. La cruz de fijación se superponía a las señales, es decir, se mostraba durante 6s. Estos conjuntos de datos cuentan con información completa sobre los marcadores.
 
 ### + Formato de los datos
 Se dan señales continuas de 59 canales de EEG y marcadores que indican los puntos de tiempo de la presentación de la pista y las clases objetivo correspondientes.
@@ -56,16 +56,15 @@ Se dan señales continuas de 59 canales de EEG y marcadores que indican los punt
 Los datos se encuentran guardados en formato de Matlab (*.mat) y contienen las siguientes variables:
 - cnt: Las señales continuas de EEG de tamaño (tiempo x canales). Tipo de dato: INT16. Para convertirlo en valores de microvoltios (uV), cnt= 0.1*double(cnt).
 - mrk: Estructura de la información sobre el objetivo con campos:
-  - pos: vector de posiciones de la señal visual en las señales del EEG, dadas en unidad de muestra.
-  - y: 
-- nfo: 
-  - fs: 
-  - clab: 
-  - classes: 
-  - xpos: 
-  - ypos: 
+  - pos: Vector de posiciones de la señal visual en las señales del EEG, dadas en unidad de muestra.
+  - y:  Vector de clases objetivo (-1 para la clase uno o 1 para la clase dos).
+- nfo: Estructura que proporciona información adicional con campos:
+  - fs: Frecuencia de muestreo.
+  - clab: Arreglo de las etiquetas de los canales.
+  - classes: Arreglo de los nombres de las clases de movimientos imaginarios. 
+  - xpos: posición-x de los electrodos en una proyección 2d.
+  - ypos: posición-y de los electrodos en una proyección 2d.
 _______________________________________________________________________________________________________________________________________________________________________
-
 
 
 Requirements and Evaluation
