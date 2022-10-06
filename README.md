@@ -1,5 +1,6 @@
+English and spanish explanation / Explicación en inglés y español.
+
 # Signal Processing of EEG data and their classification using Artificial Inteligence algorithms
-English and spanish explanation/Explicación en inglés y español.
 
 ## Description
 This repositorie is to analyze and process EEG signals and then make some classification fot motor imagery, making this way an aplication for Brain Computer Interface (BCI).
