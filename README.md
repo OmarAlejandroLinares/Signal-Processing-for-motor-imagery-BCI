@@ -36,6 +36,11 @@ The recording was made using BrainAmp MR plus amplifiers and a Ag/AgCl electrode
 
 Reference: Benjamin Blankertz, Guido Dornhege, Matthias Krauledat, Klaus-Robert Müller, and Gabriel Curio. The non-invasive Berlin Brain-Computer Interface: Fast acquisition of effective performance in untrained subjects. NeuroImage, 37(2):539-550, 2007.
 
+## Repository
+This repository consists of:
+- BCICIV_1_mat: Database, previously detailed, for seven test subjects.
+- lectura.ipynb: Jupyter Notebook in which the loading, reading, analysis, plotting, filtering and preparation of the EEG signals of a test subject is performed.
+- feature_extraction.py: Proprietary algorithm in which statistical features are extracted from the signals and a feature vector of the input signal is obtained as a result.
 _______________________________________________________________________________________________________________________________________________________________________
 # Procesamiento de señales EEG y su clasificación por algoritmos de Inteligencia Artificial.
 
@@ -72,3 +77,9 @@ Los datos se encuentran guardados en formato de Matlab (*.mat) y contienen las s
 El registro se realizó utilizando amplificadores BrainAmp MR plus y un casquillo de electrodos de Ag/AgCl. Se midieron las señales de 59 posiciones del EEG que estaban más densamente distribuidas en las áreas sensoriomotoras. Las señales se muestrearon a 100 Hz y se sometieron a un filtro paso bajas (Chebyshev tipo II de orden 10 con una ondulación de banda de parada de 50 dB hacia abajo y una frecuencia de borde de banda de parada de 49 Hz).
 
 Referencia: Benjamin Blankertz, Guido Dornhege, Matthias Krauledat, Klaus-Robert Müller, and Gabriel Curio. The non-invasive Berlin Brain-Computer Interface: Fast acquisition of effective performance in untrained subjects. NeuroImage, 37(2):539-550, 2007.
+
+## Repositorio
+Éste repositorio está formado por:
+- BCICIV_1_mat: Base de datos, anteriormente detallada, para siete sujetos de prueba.
+- lectura.ipynb: Libreta de Jupyter Notebook en el que se realiza el cargado, lectura, análisis, graficado, filtrado y preparación de las señales de EEG de un sujeto de prueba.
+- feature_extraction.py: Algoritmo propio en el que se extraen características estadísticas a las señales y se obtiene como resultado un vector de características propias de la señal de entrada.
