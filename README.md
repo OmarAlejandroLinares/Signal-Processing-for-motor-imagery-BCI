@@ -20,6 +20,19 @@ Arrows pointing left, right, or down were presented as visual cues on a computer
 ### + Format of the Data
 Given are continuous signals of 59 EEG channels and markers that indicate the time points of cue presentation and the corresponding target classes.
 
+Data are provided in Matlab format (*.mat) containing variables:
+- cnt: the continuous EEG signals, size [time x channels]. The array is stored in datatype INT16. To convert it to uV values, cnt= 0.1*double(cnt).
+- mrk: structure of target cue information with fields:
+  - pos: vector of positions of the visual cue in the EEG signals, given in unit sample.
+  - y: vector of target classes (-1 for class one or 1 for class two).
+- nfo: structure providing additional information with fields:
+  - fs: sampling rate.
+  - clab: cell array of channel labels.
+  - classes: cell array of the names of the motor imagery classes.
+  - xpos: x-position of electrodes in a 2d-projection.
+  - ypos: y-position of electrodes in a 2d-projection.
+
+
 # Procesamiento de señales EEG y su clasificación por algoritmos de Inteligencia Artificial.
 
 ## Descripción
@@ -41,9 +54,9 @@ Se presentaron flechas que apuntaban a la izquierda, a la derecha o hacia abajo 
 Se dan señales continuas de 59 canales de EEG y marcadores que indican los puntos de tiempo de la presentación de la pista y las clases objetivo correspondientes.
 
 Los datos se encuentran guardados en formato de Matlab (*.mat) y contienen las siguientes variables:
-- cnt: 
-- mrk: 
-  - pos: 
+- cnt: Las señales continuas de EEG de tamaño (tiempo x canales). Tipo de dato: INT16. Para convertirlo en valores de microvoltios (uV), cnt= 0.1*double(cnt).
+- mrk: Estructura de la información sobre el objetivo con campos:
+  - pos: vector de posiciones de la señal visual en las señales del EEG, dadas en unidad de muestra.
   - y: 
 - nfo: 
   - fs: 
@@ -52,20 +65,6 @@ Los datos se encuentran guardados en formato de Matlab (*.mat) y contienen las s
   - xpos: 
   - ypos: 
 _______________________________________________________________________________________________________________________________________________________________________
-
-
-Data are provided in Matlab format (*.mat) containing variables:
-
-cnt: the continuous EEG signals, size [time x channels]. The array is stored in datatype INT16. To convert it to uV values, use cnt= 0.1*double(cnt); in Matlab.
-mrk: structure of target cue information with fields (the file of evaluation data does not contain this variable)
-pos: vector of positions of the cue in the EEG signals given in unit sample, length #cues
-y: vector of target classes (-1 for class one or 1 for class two), length #cues
-nfo: structure providing additional information with fields
-fs: sampling rate,
-clab: cell array of channel labels,
-classes: cell array of the names of the motor imagery classes,
-xpos: x-position of electrodes in a 2d-projection,
-ypos: y-position of electrodes in a 2d-projection.
 
 
 
