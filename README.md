@@ -35,7 +35,7 @@ Calibration data: In the first two runs, arrows pointing left, right, or down we
 
 Se presentaron flechas que apuntaban a la izquierda, a la derecha o hacia abajo como señales visuales en una pantalla de ordenador. Las señales se mostraban durante un periodo de 4 segundos en el que se indicaba al sujeto que realizara la tarea de imágenes motoras con señales. Estos periodos se intercalaron con 2s de pantalla en blanco y 2s con una cruz de fijación mostrada en el centro de la pantalla. La cruz de fijación se superponía a las señales, es decir, se mostraba durante 6s. Estos conjuntos de datos cuentan con información completa sobre los marcadores.
 
-
+_____________________________________________
 
 
 
