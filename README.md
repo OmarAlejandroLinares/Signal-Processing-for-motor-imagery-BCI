@@ -1,4 +1,5 @@
 # Signal Processing of EEG data and their classification using Artificial Inteligence algorithms
+English and spanish explanation/Explicación en inglés y español.
 
 ## Description
 This repositorie is to analyze and process EEG signals and then make some classification fot motor imagery, making this way an aplication for Brain Computer Interface (BCI).
@@ -10,8 +11,12 @@ Thats how the data set selected was found in the following link: https://bbci.de
 
 Data sets provided by the Berlin BCI group: Berlin Institute of Technology (Machine Learning Laboratory) and Fraunhofer FIRST (Intelligent Data Analysis Group) (Klaus-Robert Müller, Benjamin Blankertz, Carmen Vidaurre, Guido Nolte), and Campus Benjamin Franklin of the Charité - University Medicine Berlin, Department of Neurology, Neurophysics Group (Gabriel Curio).
 
+### Experimental setup
+These data sets were recorded from healthy subjects. In the whole session motor imagery was performed without feedback. For each subject two classes of motor imagery were selected from the three classes left hand, right hand, and foot.
+
+Arrows pointing left, right, or down were presented as visual cues on a computer screen. Cues were displayed for a period of 4s during which the subject was instructed to perform the cued motor imagery task. These periods were interleaved with 2s of blank screen and 2s with a fixation cross shown in the center of the screen. The fixation cross was superimposed on the cues, i.e. it was shown for 6s. These data sets are provided with complete marker information.
+
 # Procesamiento de señales EEG y su clasificación por algoritmos de Inteligencia Artificial.
-Signal Processing of EEG data and their feature extraction.
 
 ## Descripción
 Este repositorio es un proyecto enfocado en el análisis y procesamiento digital de señales electroencefalográficas para darle una aplicación de intención de movimiento en lo que se conoce como Interfaces Cerebro Computadora (BCI).
@@ -23,16 +28,26 @@ Fue así como se dio con el siguiente dataset: https://bbci.de/competition/iv/de
 
 Éste data set fue obtenido por el grupo de BCI de Berlin formado por: Laboratorio de Machine Learning, Grupo de Análisis Inteligente de Datos del Instituto Tecnológico de Berlin y por el Departamento de Neurología y Neurofísica de la Universidad de Medicina de Berlin.
 
-Correspondence to Benjamin Blankertz ‹benjamin.blankertz@tu-berlin.de›
+### Montaje experimental
+Estos conjuntos de datos se registraron en sujetos sanos. En toda la sesión se realizaron imágenes motoras sin retroalimentación. Para cada sujeto se seleccionaron dos clases de imágenes motoras de las tres clases mano izquierda, mano derecha y pie.
 
-The Thrill
-Most demonstrations of algorithms on BCI data are evaluating classification of EEG trials, i.e., windowed EEG signals for fixed length, where each trial corresponds to a specific mental state. But in BCI applications with asynchronous feedback one is faced with the problem that the classifier has to be applied continuously to the incoming EEG without having cues of when the subject is switching her/his intention. This data set poses the challenge of applying a classifier to continuous EEG for which no cue information is given.
-Another issue that is addressed in this data set is that the evaluation data contains periods in which the user has no control intention. During those intervals the classifier is supposed to return 0 (no affiliation to one of the target classes).
-Experimental Setup
-These data sets were recorded from healthy subjects. In the whole session motor imagery was performed without feedback. For each subject two classes of motor imagery were selected from the three classes left hand, right hand, and foot (side chosen by the subject; optionally also both feet).
 Calibration data: In the first two runs, arrows pointing left, right, or down were presented as visual cues on a computer screen. Cues were displayed for a period of 4s during which the subject was instructed to perform the cued motor imagery task. These periods were interleaved with 2s of blank screen and 2s with a fixation cross shown in the center of the screen. The fixation cross was superimposed on the cues, i.e. it was shown for 6s. These data sets are provided with complete marker information.
-Evaluation data: Then 4 runs followed which are used for evaluating the submissions to the competitions. Here, the motor imagery tasks were cued by soft acoustic stimuli (words left, right, and foot) for periods of varying length between 1.5 and 8 seconds. The end of the motor imagery period was indicated by the word stop. Intermitting periods had also a varying duration of 1.5 to 8s. Note that in the evaluation data, there are not necessarily equally many trials from each condition.
-Special Feature: Some of the data sets were artificially generated. The idea is to have a means for generating artifical EEG signals with specified properties that is such realistic that it can be used to evaluate and compare analysis techniques. The outcome of the competition will show whether the applied methods perform comparably on artifical and real data. The only information we provide is that there is at least one real and at least one artificial data set, while the true distribution remains undisclosed until the submission deadline. For competition purpose, only results for the real data set(s) are considered. The functions for generating artificial data were provided by Guido Nolte and Carmen Vidaurre.
+
+Se presentaron flechas que apuntaban a la izquierda, a la derecha o hacia abajo como señales visuales en una pantalla de ordenador. Las señales se mostraban durante un periodo de 4 segundos en el que se indicaba al sujeto que realizara la tarea de imágenes motoras con señales. Estos periodos se intercalaron con 2s de pantalla en blanco y 2s con una cruz de fijación mostrada en el centro de la pantalla. La cruz de fijación se superponía a las señales, es decir, se mostraba durante 6s. Estos conjuntos de datos cuentan con información completa sobre los marcadores.
+
+
+
+
+
+
+
+
+
+
+
+
+Experimental Setup
+
 Format of the Data
 Given are continuous signals of 59 EEG channels and, for the calibration data, markers that indicate the time points of cue presentation and the corresponding target classes.
 
