@@ -4,7 +4,8 @@ def statistics_feature_extraction(x):
     import numpy as np
 
     vector_caracteristicas = []
-    xsize = x.size
+    xsize = x.shape
+
     #F1: Promedio
     promedio=x.mean()
     vector_caracteristicas.append(promedio)
