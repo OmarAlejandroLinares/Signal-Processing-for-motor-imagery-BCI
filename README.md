@@ -83,3 +83,10 @@ Referencia: Benjamin Blankertz, Guido Dornhege, Matthias Krauledat, Klaus-Robert
 - BCICIV_1_mat: Base de datos, anteriormente detallada, para siete sujetos de prueba.
 - lectura.ipynb: Libreta de Jupyter Notebook en el que se realiza el cargado, lectura, análisis, graficado, filtrado y preparación de las señales de EEG de un sujeto de prueba.
 - feature_extraction.py: Algoritmo propio en el que se extraen características estadísticas a las señales y se obtiene como resultado un vector de características propias de la señal de entrada.
+
+
+## Resultados
+<img src="results.png">
+
+## Repositorios
+<img src="repositories.png">
